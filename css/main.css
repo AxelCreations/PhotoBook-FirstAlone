@@ -1,7 +1,170 @@
 .row {
   margin: 0;
-  padding: 0 220px;
 }
-#page-options {
-  margin-left: 15%;
+.no-margin {
+  margin: 0;
+}
+.full-height {
+  height: 100vh;
+}
+#principal {
+  overflow: hidden;
+}
+#principal #nav {
+  position: relative;
+  padding: 25px 0 0 0;
+  height: 80px;
+  background-color: #fff;
+  z-index: 10;
+}
+#principal #nav div {
+  height: 30px;
+}
+#principal #nav .nav-contact {
+  padding: 0;
+}
+#principal #nav .nav-contact a {
+  display: inline-block;
+  background-color: #ffd200;
+  border-radius: 10px;
+  color: #212121;
+  margin: -7px 0 0 0;
+  padding: 0.5em 10%;
+  position: relative;
+  white-space: nowrap;
+}
+#principal #nav .nav-contact a:before {
+  content: '';
+  width: 62%;
+  margin: 0 20px;
+  position: absolute;
+  left: 10%;
+  bottom: 24%;
+  border-top: 2px dotted #212121;
+}
+#principal #nav .nav-contact a:hover {
+  text-decoration: none;
+}
+#principal #nav .nav-log .box-border {
+  border-bottom: 2px solid #000;
+  border-right: 2px solid #000;
+  border-top: 2px solid #000;
+  width: 27px;
+  position: relative;
+  left: 35%;
+  margin: -6px 0 0 0;
+}
+#principal #nav .nav-log .box-border svg {
+  cursor: pointer;
+  left: -9px;
+  padding-top: 12px;
+  position: absolute;
+}
+#principal #nav .nav-log .box-border svg line {
+  display: inline-block;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+#principal #nav .nav-menu {
+  padding: 0.3em 0 0 0;
+}
+#principal #nav .nav-menu svg {
+  margin: 0 0 0 25%;
+  border-top: 1px solid #000;
+  border-bottom: 1.5px solid #000;
+  padding-top: 8px;
+  cursor: pointer;
+}
+#principal #nav .nav-menu svg line {
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+#principal #nav .nav-title {
+  font-weight: bold;
+  padding: 0;
+}
+#principal #nav .nav-title p {
+  font-size: 20px;
+  color: #000;
+  white-space: nowrap;
+}
+#principal #nav .nav-title p img {
+  position: relative;
+  top: -2px;
+  height: 19px;
+  width: 19px;
+}
+#principal .home {
+  margin: 84px 0 0 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  top: -12%;
+  width: 101%;
+  z-index: 0;
+  padding: 0;
+}
+#principal .home .bg-container {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  height: 100%;
+}
+#principal .home .bg-container img {
+  left: 60%;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: -60%;
+  -webkit-transform: translate(-61%, 0);
+  -ms-transform: translate(-61%, 0);
+  transform: translate(-61%, 0);
+  z-index: 0;
+}
+#principal .home h1 {
+  z-index: 10;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+#principal .home h1::first-letter {
+  font-size: 1.3em;
+}
+#principal .home h3 {
+  z-index: 10;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+#principal .home .btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.3em;
+  vertical-align: middle;
+  position: relative;
+  top: 15vh;
+  margin: 0;
+  background-color: transparent;
+  border: 1px solid #212121;
+  padding: 0.7em 1.7em;
+}
+@media only screen and (max-width: 360px) {
+  #principal .home .bg-container img {
+    left: 80%;
+    top: -28%;
+  }
 }
