@@ -15,17 +15,61 @@
 .full-height
 	height 100vh
 
+
+
 #page-options
 	// background #333
 
 #principal
 	overflow hidden
 
-	#nav
+	.home
+		align-items center
+		background grey
+		display flex
+		flex-direction column
+		height (100vh)
+		padding-bottom -80px
 		position relative
-		padding 25px 0 0 0
+
+		h1, h3
+			position relative
+			top 15%
+
+		h1
+			letter-spacing 2px
+			// margin 10% 0 0 0
+			
+			z-index 10
+			&::first-letter
+				font-size 1.3em
+
+		h3
+			font-size 1.3em
+			font-weight 550
+			z-index 10
+
+		.bg-img
+			height 100%
+			width 100%
+			position absolute
+			background-size cover
+			background-position center
+
+		.btn
+			font-size 1.3em
+			background-color transparent
+			border 1px solid rgb(33,33,33)
+			padding 0.7em 1.7em
+			position relative
+			top 25%
+
+	#nav
 		height 80px
-		background-color white
+		padding 25px 0 0 0
+		position absolute
+		width 100%
+		background white
 		z-index 10
 
 		div
@@ -34,22 +78,22 @@
 		.nav-contact
 			padding 0
 			a
-				display inline-block
 				background-color: rgb( 255, 210, 0 )
 				border-radius 10px
 				color rgb( 33, 33, 33 )
+				display inline-block
 				margin -7px 0 0 0
 				padding 0.5em 10%
 				position relative
 				white-space nowrap
 				&:before
+					border-top 2px dotted rgb( 33, 33, 33 )
+					bottom 24%
 					content ''
-					width 62%
+					left 10%
 					margin 0 20px
 					position absolute
-					left 10%
-					bottom 24%
-					border-top 2px dotted rgb( 33, 33, 33 )
+					width 62%
 				&:hover
 					text-decoration none
 
@@ -58,10 +102,10 @@
 				border-bottom 2px solid black
 				border-right 2px solid black
 				border-top 2px solid black
-				width 27px
-				position relative
 				left 35%
 				margin -6px 0 0 0
+				position relative
+				width 27px
 
 				svg
 					cursor pointer
@@ -78,11 +122,11 @@
 			padding 0.3em 0 0 0
 
 			svg
-				margin 0 0 0 25%
-				border-top 1px solid black
 				border-bottom 1.5px solid black
-				padding-top 8px
+				border-top 1px solid black
 				cursor pointer
+				margin 0 0 0 25%
+				padding-top 8px
 
 				line
 					stroke black
@@ -91,91 +135,56 @@
 		.nav-title
 			font-weight bold
 			padding 0
-
 			p
-				font-size 20px
 				color black
+				font-size 20px
 				white-space nowrap
-
 				img
+					height 19px
 					position relative
 					top -2px
-					height 19px
 					width 19px
 
-	.home
-		margin 84px 0 0 0
-		align-items center
-		display flex
-		flex-direction column
-		position relative
-		top -12%
-		width 101%
-		// height 100%
-		z-index 0
-		padding 0
 
-		.bg-container
-			width 100%
-			margin 0
-			overflow hidden
-			height 100%
+@media only screen and (max-width 700px)
 
-			img
-				left 60%
-				min-height 100%
-				min-width 100%
-				position absolute
-				top -60%
-				transform translate(-61%, 0)
-				z-index 0
+	#principal
+		
+		.home
+			top 5%
+			h1
+				font-size 2em
 
-		h1
-			z-index 10
-			align-items center
-			letter-spacing 2px
+			h3
+				top 8%
 
-			&::first-letter
-				font-size 1.3em
+			.btn
+				top 15%
 
-		h3
-			z-index 10
-			font-size 1.3em
-			font-weight 600
+		#nav
+			.nav-contact
+				left -2%
 
-		.btn
-			display flex
-			font-size 1.3em
-			vertical-align middle
-			position relative
-			top 15vh
-			margin 0
-			background-color transparent
-			border 1px solid rgb(33,33,33)
-			padding 0.7em 1.7em
 
-@media only screen and (max-width 640px)
+
+
+
+@media only screen and (max-width 400px)
 
 	#principal
 		.home
+
+			h1
+				font-size 2em
 			
-		.bg-container
-			
+			.bg-img
+				//
+		#nav
+			font-size 0.8em
 
-			.bg-container
-				
-				img
-					
+			.nav-contact
+				top 7px
+				left -3px
 
-@media only screen and (max-width 360px)
-
-	#principal
-		.home
-			
-
-			.bg-container
-				
-
-				img
-					left 80%
-					top -28%
+			.nav-log
+				left -2px
