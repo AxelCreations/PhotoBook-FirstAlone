@@ -15,6 +15,41 @@
 .full-height {
   height: 100vh;
 }
+footer {
+  background: #ffd200;
+  height: 400px;
+  overflow: auto;
+}
+footer #foot-info {
+  margin: 4em auto 0;
+  min-width: 1020px;
+  width: 80%;
+}
+footer #foot-info .network-solution .solution {
+  border: 2px solid #ffd200;
+  position: absolute;
+  right: 0;
+  width: 185px;
+}
+footer #foot-info .solutions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+footer #foot-info .solutions .solution {
+  display: inline-block;
+  border-top: 1px solid #000;
+  font-size: 1.1em;
+  height: 250px;
+  margin: 0 2em;
+  min-width: 185px;
+  padding: 0 1.5em;
+}
+footer #foot-info .solutions .solution p {
+  letter-spacing: 1px;
+}
 #adventages {
   background-color: #f3f0e7;
   margin: 0;
@@ -97,6 +132,89 @@
   margin: 0;
   padding: 0.4em;
 }
+#information .solutions {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 330px;
+  margin: 5em auto 1em;
+  overflow-x: auto;
+  padding: 0.5em 0 0 1.2em;
+  width: 86%;
+}
+#information .solutions .margined {
+  margin: 0 65px;
+}
+#information .solutions .solution {
+  height: 300px;
+  min-height: 300px;
+  min-width: 310px;
+  width: 310px;
+}
+#information .solutions .solution .content {
+  background: #f7f0e6;
+  border-radius: 0 0 15px 15px;
+  border-top: 7px solid #fff;
+  font-size: 1.1em;
+  height: 237px;
+  padding: 1.7em;
+  text-align: left;
+}
+#information .solutions .solution p span {
+  color: #f00;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+#information .solutions .solution .title {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ffd200;
+  border-radius: 15px 15px 0 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 66px;
+}
+#information .solutions .solution .title h4 {
+  font-size: 1.7em;
+  letter-spacing: 5px;
+  margin: 0 auto;
+}
+#information .solutions .solution .title h4::first-letter {
+  font-size: 1.5em;
+}
+#information .btn {
+  background-color: rgba(225,26,39,0.8);
+  border: 1px solid rgba(225,26,39,0.2);
+  bottom: -10%;
+  color: rgba(255,255,255,0.9);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: columns;
+  -ms-flex-direction: columns;
+  flex-direction: columns;
+  font-size: 1.3em;
+  margin: 0 auto;
+  padding: 0.7em 1.7em;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#information .btn:hover {
+  border: 1px solid rgba(13,13,13,0.2);
+  -webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
 #page-options {
   height: 350px;
   position: relative;
@@ -109,7 +227,7 @@
   margin: 0 10%;
   overflow-x: auto;
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   width: 85%;
 }
 #page-options .options .option {
@@ -301,7 +419,256 @@
   top: -2px;
   width: 19px;
 }
+#ready-solutions {
+  overflow: auto;
+  padding-top: 2em;
+  position: relative;
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+}
+#ready-solutions h3 {
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+#ready-solutions h3::first-letter {
+  font-size: 1.3em;
+}
+#ready-solutions .solutions {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: columns;
+  -ms-flex-direction: columns;
+  flex-direction: columns;
+  margin: 5% auto 0;
+  width: 80%;
+}
+#ready-solutions .solutions .solution {
+  background: #ffd200;
+  border-radius: 7px;
+  height: 420px;
+  margin-left: 69px;
+  min-width: 314px;
+  text-align: center;
+  width: 314px;
+}
+#ready-solutions .solutions .solution:first-child {
+  margin: 0;
+}
+#ready-solutions .solutions .solution p {
+  font-size: 1.3em;
+  margin: 3% 0 0 0;
+}
+#ready-solutions .solutions .solution p span {
+  font-size: 0.8em;
+}
+#ready-solutions .solutions .solution .solution-title {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 118px;
+  position: relative;
+  width: 100%;
+}
+#ready-solutions .solutions .solution .solution-title h4 {
+  font-size: 2em;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+}
+#ready-solutions .solutions .solution .solution-title h4 span {
+  font-size: 1.2em;
+}
+#ready-solutions .solutions .solution .content {
+  background: #fff;
+  font-size: 1.3em;
+  height: 255px;
+  margin: 0 auto;
+  overflow: auto;
+  position: relative;
+  width: 96%;
+}
+#ready-solutions .solutions .solution .content ul {
+  list-style: none;
+  margin-left: 9%;
+  margin-top: 5%;
+  text-align: left;
+}
+#ready-solutions .solutions .solution .content ul li {
+  position: relative;
+  margin-bottom: 0.4em;
+}
+#ready-solutions .solutions .solution .content ul li::before {
+  background-image: url("/imgs/minis/list.png");
+  background-size: cover;
+  content: '';
+  display: inline-block;
+  height: 20px;
+  position: absolute;
+  left: -35px;
+  width: 20px;
+}
+#ready-solutions .solutions .solution .content .price {
+  bottom: 2%;
+  font-size: 3em;
+  position: absolute;
+  width: 100%;
+}
+#testimonials {
+  background: #f7f0e6;
+  overflow: hidden;
+  position: relative;
+}
+#testimonials .bg-img {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  -webkit-transition: all 2s;
+  -o-transition: all 2s;
+  transition: all 2s;
+  width: 100%;
+}
+#testimonials .btn {
+  background-color: transparent;
+  border: 1px solid rgba(33,33,33,0.3);
+  bottom: 5%;
+  font-size: 1.3em;
+  left: 17%;
+  padding: 0.7em 1.7em;
+  position: absolute;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#testimonials .btn:hover {
+  border: 1px solid rgba(13,13,13,0.2);
+  -webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
+}
+#testimonials .testimonial {
+  margin-left: 10%;
+  overflow: hidden;
+  position: absolute;
+}
+#testimonials .testimonial h3 {
+  font-size: 3em;
+  letter-spacing: 5px;
+  margin-bottom: 1em;
+  margin-top: 0.5em;
+}
+#testimonials .testimonial h3::first-letter {
+  font-size: 1.4em;
+}
+#testimonials .testimonial .owner-info {
+  position: relative;
+  height: 186px;
+}
+#testimonials .testimonial .owner-info h4,
+#testimonials .testimonial .owner-info h5 {
+  left: 35%;
+  position: relative;
+  top: 30%;
+  vertical-align: center;
+}
+#testimonials .testimonial .owner-info h4 {
+  font-size: 1.6em;
+}
+#testimonials .testimonial .owner-info h4 span {
+  font-size: 1.3em;
+}
+#testimonials .testimonial .owner-info h5 {
+  font-size: 1.3em;
+}
+#testimonials .testimonial .owner-info .owner-pic {
+  background-size: cover;
+  border-radius: 50%;
+  height: 166px;
+  position: absolute;
+  width: 166px;
+}
+#testimonials .testimonial .texto {
+  min-height: 137px;
+  min-width: 500px;
+  overflow: auto;
+  width: 500px;
+}
+#testimonials .testimonial .next-testimonial {
+  display: inline-block;
+  position: relative;
+}
+#testimonials .testimonial .next-testimonial a {
+  color: #000;
+  padding-right: 3em;
+}
+#testimonials .testimonial .next-testimonial a:hover {
+  text-decoration: none;
+}
+#testimonials .testimonial .next-testimonial a svg {
+  cursor: pointer;
+  padding-top: 12px;
+  position: absolute;
+  right: 0px;
+}
+#testimonials .testimonial .next-testimonial a svg line {
+  display: inline-block;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
 @media only screen and (max-width: 700px) {
+  #information .solutions {
+    height: 280px;
+    width: 90%;
+  }
+  #information .solutions .margined {
+    margin: 0 40px;
+  }
+  #information .solutions .solution {
+    height: 250px;
+    min-height: 250px;
+    min-width: 260px;
+    width: 310px;
+  }
+  #information .solutions .solution .content {
+    border-top: 4px solid #fff;
+    font-size: 1em;
+    height: 187px;
+    padding: 1.6em;
+  }
+  #information .solutions .solution p span {
+    font-size: 1em;
+  }
+  #information .solutions .solution .title {
+    height: 46px;
+  }
+  #information .solutions .solution .title h4 {
+    font-size: 1.5em;
+    letter-spacing: 3px;
+  }
+  #information .solutions .solution .title h4::first-letter {
+    font-size: 1.1em;
+  }
+  #information .btn {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
   #adventages .btn {
     -webkit-transform: scale(0.9);
     -ms-transform: scale(0.9);
@@ -329,7 +696,7 @@
     margin-left: 8%;
   }
   #page-options .options .option {
-    height: 220px;
+    height: 205px;
   }
   #principal .home {
     top: 5%;
@@ -345,6 +712,67 @@
   }
   #principal #nav .nav-contact {
     left: -2%;
+  }
+  #ready-solutions {
+    padding-top: 5em;
+  }
+  #ready-solutions .solutions .solution {
+    border-radius: 5px;
+    height: 320px;
+    min-width: 264px;
+    width: 264px;
+  }
+  #ready-solutions .solutions .solution .solution-title {
+    height: 68px;
+  }
+  #ready-solutions .solutions .solution .solution-title h4 {
+    font-size: 1.6em;
+  }
+  #ready-solutions .solutions .solution .solution-title h4 span {
+    font-size: 1.1em;
+  }
+  #ready-solutions .solutions .solution .content {
+    height: 205px;
+  }
+  #ready-solutions .solutions .solution .content ul li {
+    margin-bottom: 0.2em;
+  }
+  #ready-solutions .solutions .solution .content .price {
+    bottom: 1%;
+    font-size: 2em;
+  }
+  #testimonials .btn {
+    bottom: 1%;
+    left: 12%;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  #testimonials .testimonial h3 {
+    font-size: 2em;
+  }
+  #testimonials .testimonial .owner-info h4,
+  #testimonials .testimonial .owner-info h5 {
+    left: 2%;
+    top: 65%;
+  }
+  #testimonials .testimonial .owner-info h4 {
+    font-size: 1.2em;
+  }
+  #testimonials .testimonial .owner-info h4 span {
+    font-size: 1.4em;
+  }
+  #testimonials .testimonial .owner-info h5 {
+    font-size: 1em;
+  }
+  #testimonials .testimonial .owner-info .owner-pic {
+    height: 106px;
+    width: 106px;
+  }
+  #testimonials .testimonial .texto {
+    max-height: 110px;
+    min-width: 300px;
+    width: 300px;
   }
 }
 @media only screen and (max-width: 400px) {
