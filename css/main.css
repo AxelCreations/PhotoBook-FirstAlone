@@ -17,7 +17,7 @@
 }
 footer {
   background: #ffd200;
-  height: 400px;
+  height: 300px;
   overflow: auto;
 }
 footer #foot-info {
@@ -42,7 +42,7 @@ footer #foot-info .solutions .solution {
   display: inline-block;
   border-top: 1px solid #000;
   font-size: 1.1em;
-  height: 250px;
+  height: 200px;
   margin: 0 2em;
   min-width: 185px;
   padding: 0 1.5em;
@@ -132,19 +132,31 @@ footer #foot-info .solutions .solution p {
   margin: 0;
   padding: 0.4em;
 }
+#information {
+  height: 90vh;
+  position: relative;
+  top: -10vh;
+}
 #information .solutions {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 330px;
-  margin: 5em auto 1em;
+  height: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   overflow-x: auto;
   padding: 0.5em 0 0 1.2em;
-  width: 86%;
+  z-index: 0;
 }
 #information .solutions .margined {
-  margin: 0 65px;
+  margin: 0 10%;
 }
 #information .solutions .solution {
   height: 300px;
@@ -187,48 +199,58 @@ footer #foot-info .solutions .solution p {
 #information .solutions .solution .title h4::first-letter {
   font-size: 1.5em;
 }
-#information .btn {
-  background-color: rgba(225,26,39,0.8);
-  border: 1px solid rgba(225,26,39,0.2);
-  bottom: -10%;
-  color: rgba(255,255,255,0.9);
+#information .btn-container {
+  bottom: 10%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: columns;
-  -ms-flex-direction: columns;
-  flex-direction: columns;
+  position: absolute;
+  width: 100%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#information .btn-container .btn {
+  background-color: rgba(225,26,39,0.8);
+  border: 1px solid rgba(225,26,39,0.2);
+  color: rgba(255,255,255,0.9);
   font-size: 1.3em;
-  margin: 0 auto;
   padding: 0.7em 1.7em;
-  position: relative;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-#information .btn:hover {
+#information .btn-container .btn:hover {
   border: 1px solid rgba(13,13,13,0.2);
   -webkit-box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
   box-shadow: 2px 2px 10px rgba(0,0,0,0.6);
   text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
 #page-options {
-  height: 350px;
-  position: relative;
-}
-#page-options .options {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 10%;
-  overflow-x: auto;
-  position: absolute;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 350px;
+  position: relative;
+}
+#page-options .options {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   bottom: 15%;
-  width: 85%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: auto;
 }
 #page-options .options .option {
   height: 250px;
@@ -420,44 +442,43 @@ footer #foot-info .solutions .solution p {
   width: 19px;
 }
 #ready-solutions {
-  overflow: auto;
-  padding-top: 2em;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
   -webkit-transition: 0.6s;
   -o-transition: 0.6s;
   transition: 0.6s;
-}
-#ready-solutions h3 {
-  letter-spacing: 2px;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-#ready-solutions h3::first-letter {
-  font-size: 1.3em;
 }
 #ready-solutions .solutions {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  bottom: 0%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: columns;
-  -ms-flex-direction: columns;
-  flex-direction: columns;
-  margin: 5% auto 0;
-  width: 80%;
+  height: 90%;
+  overflow-x: auto;
+  position: relative;
+  z-index: 0;
 }
 #ready-solutions .solutions .solution {
   background: #ffd200;
   border-radius: 7px;
   height: 420px;
-  margin-left: 69px;
+  margin-left: 100px;
   min-width: 314px;
   text-align: center;
   width: 314px;
@@ -528,6 +549,20 @@ footer #foot-info .solutions .solution p {
   font-size: 3em;
   position: absolute;
   width: 100%;
+}
+#ready-solutions .title {
+  position: absolute;
+  top: 17%;
+}
+#ready-solutions .title h3 {
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0;
+}
+#ready-solutions .title h3::first-letter {
+  font-size: 1.3em;
 }
 #testimonials {
   background: #f7f0e6;
@@ -633,8 +668,12 @@ footer #foot-info .solutions .solution p {
 }
 @media only screen and (max-width: 700px) {
   #information .solutions {
-    height: 280px;
-    width: 90%;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    overflow-x: auto;
+    width: 98%;
   }
   #information .solutions .margined {
     margin: 0 40px;
@@ -664,7 +703,13 @@ footer #foot-info .solutions .solution p {
   #information .solutions .solution .title h4::first-letter {
     font-size: 1.1em;
   }
-  #information .btn {
+  #information .btn-container {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  #information .btn-container .btn {
     -webkit-transform: scale(0.8);
     -ms-transform: scale(0.8);
     transform: scale(0.8);
@@ -689,12 +734,6 @@ footer #foot-info .solutions .solution p {
   #adventages .content .adventage p {
     font-size: 0.9em;
   }
-  #page-options .options {
-    bottom: 0;
-    font-size: 0.8em;
-    height: 230px;
-    margin-left: 8%;
-  }
   #page-options .options .option {
     height: 205px;
   }
@@ -705,10 +744,10 @@ footer #foot-info .solutions .solution p {
     font-size: 2em;
   }
   #principal .home h3 {
-    top: 8%;
+    top: 17%;
   }
   #principal .home .btn {
-    top: 15%;
+    top: 25%;
   }
   #principal #nav .nav-contact {
     left: -2%;
